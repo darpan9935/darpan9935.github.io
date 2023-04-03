@@ -12,24 +12,28 @@
     </script>
 
     <script>
-        var userID = window.localStorage.getItem("userID");
+        //Page Load event: All pages
+        var userId = window.localStorage.getItem("userID");
+        var pageUrl = document.URL;
         // window.localStorage.setItem('userID', 'test1');
         // window.localStorage.getItem('userID');
         // window.localStorage.removeItem('userID');
 
         window.digitalData = window.digitalData || [];
         window.digitalData.push({
-                        "event":"pageView",
-                        "page":{
-                            "pageName": "home",
-                            "siteSection": "Home",
-                            "siteSubsection": "Home",
-                            },
-                        "user":{
-                            "userID" : userID,
-                            "loginStatus" : "Loggedin"
-                        }
-                    });
+            "event":"pageView",
+            "page":{
+                "pageName": "home",
+                "pageType": "home",
+                "pageUrl": pageUrl,
+                "siteSection": "Home",
+                "siteSubsection": "Home",
+                },
+            "user":{
+                "userID" : userId,
+                "loginStatus" : "Loggedin"
+            }
+        });
     </script>
 
  <!--Archana's sandbox Lauch link
