@@ -11,15 +11,19 @@
 
 
     <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Checkout:Order Review Step 3",
-                siteSection: "Checkout",
-                server: "Geometrixx Clothiers Site"
-            },
-        };
+        var digitalData = digitalData || [];
+        window.digitalData.push({
+            "event":"pageView",
+            "page": {
+                "pageName": "Checkout:Order Review Step 3",
+                "siteSection": "Checkout",
+                "server": "Geometrixx Clothiers Site"
+            }
+        });
     </script>
+
+    <!--Darpan's Capstone Lib code-->
+    <script src="https://assets.adobedtm.com/f8b51491a110/969cf085be40/launch-094e8e9274bc-development.min.js" async></script>
 
 
     <title>Geometrixx|Checkout|Order Review Step 3</title>

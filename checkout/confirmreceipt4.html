@@ -10,24 +10,27 @@
 
 
     <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Checkout:Order Confirmation Step 4",
-                siteSection: "Checkout",
-                server: "Geometrixx Clothiers Site"
+        var digitalData = digitalData || [];
+        window.digitalData.push({
+            "event":"pageView",
+            "page": {
+                "pageName": "Checkout:Order Confirmation Step 4",
+                "siteSection": "Checkout",
+                "server": "Geometrixx Clothiers Site"
             },
-	    product: {
-			productID: "201233",
-			productName: "Tuxedo",
-			productTotalRevenue: "2600.00",
-			productTotalUnits: "1",
-			productTax: "235.00",
-			productPostage: "50"
-	    },		
-        };
+            "product": {
+                "productID": "201233",
+                "productName": "Tuxedo",
+                "productTotalRevenue": "2600.00",
+                "productTotalUnits": "1",
+                "productTax": "235.00",
+                "productPostage": "50"
+	        }	
+        });
     </script>
 
+    <!--Darpan's Capstone Lib code-->
+    <script src="https://assets.adobedtm.com/f8b51491a110/969cf085be40/launch-094e8e9274bc-development.min.js" async></script>
 
     <title>Geometrixx|Checkout|Order Confirmation Step 4</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
