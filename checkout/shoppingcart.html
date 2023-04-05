@@ -12,13 +12,42 @@
 
     <script>
         var digitalData = digitalData || [];
-        digitalData = {
-            page: {
-                pageName: "Checkout:Shopping Cart",
-                siteSection: "Checkout",
-                server: "Geometrixx Clothiers Site"
+        window.digitalData.push({
+            "event":"pageView",
+            "page": {
+                "pageName": "Checkout:Shopping Cart",
+                "siteSection": "Checkout",
+                "server": "Geometrixx Clothiers Site"
             },
-        };
+            "cart": {
+                "productsInCart": 3,
+                "orderId": "cb465f3d-70f4-4c1f-aa0a-52fcb198919a",
+                "cartAmount": "131.00",
+                "cartEntries": [
+                {
+                    "qty": "1",
+                    "sku": "LLMH12.1-S",
+                    "title": "Ajax Full-Zip Sweatshirt (Blue / S)",
+                    "formattedPrice": "$69.00",
+                    "price": "69.00"
+                },
+                {
+                    "qty": "1",
+                    "sku": "LLMT09.1-S",
+                    "title": "Sinbad Fitness Tank - (Blue / S)",
+                    "formattedPrice": "$29.00",
+                    "price": "29.00"
+                },
+                {
+                    "qty": "1",
+                    "sku": "24-WB06",
+                    "title": "Endeavor Daytrip Backpack",
+                    "formattedPrice": "$33.00",
+                    "price": "33.00"
+                }
+                ]
+            }
+        });
     </script>
 
     <!--Darpan's Capstone Lib code-->

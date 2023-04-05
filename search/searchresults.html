@@ -23,24 +23,23 @@
     </script>
 
 
-
-
     <script>
         var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Search Results",
-                siteSection: "Search Results",
-                siteSubsection: "Search Results",
-                server: "Geometrixx Clothiers Site",
-                searchTerm: searchTerm
+        window.digitalData.push({
+            "event":"pageView",
+            "page": {
+                "pageName": "Search Results",
+                "siteSection": "Search Results",
+                "siteSubsection": "Search Results",
+                "server": "Geometrixx Clothiers Site",
+                "searchTerm": searchTerm
             },
-        };
+        });
     </script>
 
-
-
-
+    <!--Darpan's Capstone Lib code-->
+    <script src="https://assets.adobedtm.com/f8b51491a110/969cf085be40/launch-094e8e9274bc-development.min.js" async></script>
+    
     <title>Geometrixx|Search Results</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="noindex, nofollow">

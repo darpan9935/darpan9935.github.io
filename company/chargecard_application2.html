@@ -11,14 +11,15 @@
 
 
     <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Company:Geo Charge Card Step 2",
-                siteSection: "Company",
-                server: "Geometrixx Clothiers Site"
+        var digitalData = digitalData || [];
+        window.digitalData.push({
+            "event":"pageView",
+            "page": {
+                "pageName": "Company:Geo Charge Card Step 2",
+                "siteSection": "Company",
+                "server": "Geometrixx Clothiers Site"
             },
-        };
+        });
     </script>
 
     <!--Darpan's Capstone Lib code-->

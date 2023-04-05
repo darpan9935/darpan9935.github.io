@@ -11,19 +11,20 @@
 
 
     <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Men:Activewear:Hooded Sweater",
-                siteSection: "Men",
-                siteSubsection: "Activewear",
-                server: "Geometrixx Clothiers Site"
+        var digitalData = digitalData || [];
+        window.digitalData.push({
+            "event":"pageView",
+            "page": {
+                "pageName": "Men:Activewear:Hooded Sweater",
+                "siteSection": "Men",
+                "siteSubsection": "Activewear",
+                "server": "Geometrixx Clothiers Site"
             },
-            product: {
-                productID: "200233",
-                productName: "Hooded Sweater"
-            },
-        };
+            "product": {
+                "productID": "200233",
+                "productName": "Hooded Sweater"
+            }
+        });
     </script>
 
 

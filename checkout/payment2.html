@@ -12,13 +12,14 @@
 
     <script>
         var digitalData = digitalData || [];
-        digitalData = {
-            page: {
-                pageName: "Checkout:Payment Step 2",
-                siteSection: "Checkout",
-                server: "Geometrixx Clothiers Site"
-            },
-        };
+        window.digitalData.push({
+        "event":"pageView",
+            "page": {
+                "pageName": "Checkout:Payment Step 2",
+                "siteSection": "Checkout",
+                "server": "Geometrixx Clothiers Site"
+            }
+        });
     </script>
 
     <!--Darpan's Capstone Lib code-->
