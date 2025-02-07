@@ -9,14 +9,37 @@
         var o=e.createElement("style");
         o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
         (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".body { opacity: 0 !important }", 3000);
-      </script>
+    </script>
 
-<script>
-        var userID = window.localStorage.getItem("userID");
+    <script>
+        //Page Load event: All pages
+        var userId = window.localStorage.getItem("userID");
+        var pageUrl = document.URL;
+        var hostName = window.location.hostname;
         // window.localStorage.setItem('userID', 'test1');
         // window.localStorage.getItem('userID');
         // window.localStorage.removeItem('userID');
 
+        window.digitalData = window.digitalData || [];
+        window.digitalData.push({
+            "event":"pageView",
+            "page":{
+                "server": hostName,
+                "pageName": "home",
+                "pageType": "home",
+                "pageUrl": pageUrl,
+                "siteSection": "Home",
+                "siteSubsection": "Home",
+                },
+            "user":{
+                "userID" : userId,
+                "loginStatus" : "Loggedin"
+            }
+        });
+    </script>
+    <script>
+        //datalayer created by Archana 
+        /*
         window.geometData = window.geometData || [];
         window.geometData.push({
                         "event":"pageView",
@@ -30,10 +53,16 @@
                             "loginStatus" : "Loggedin"
                         }
                     });
-
+        */
     </script>
 
- <script src="https://assets.adobedtm.com/9ee7107080b4/153504d4432e/launch-afa553d1ba18-development.min.js" async></script>
+
+ <!--Darpan's Capstone Lib code
+ <script src="https://assets.adobedtm.com/f8b51491a110/969cf085be40/launch-094e8e9274bc-development.min.js" async></script>
+-->
+
+<!-- Saudi Tourism - AGS launch web property-->>
+<script src="https://assets.adobedtm.com/f8b51491a110/30c2024c26ad/launch-be17075c91a5-development.min.js" async></script>
 
    <!-- <script src="//av.sc.com/tw/configuration/adobe/staging/27ea1b8be52d/77d21f359b81/launch-49b569cf67ae-staging.min.js" async></script> -->
 
