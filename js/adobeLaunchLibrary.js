@@ -1,3 +1,3 @@
-head.load("js/jquery.min.jshttps://assets.adobedtm.com/f8b51491a110/969cf085be40/launch-094e8e9274bc-development.min.js", function() {
+head.load("https://assets.adobedtm.com/9ee7107080b4/153504d4432e/launch-afa553d1ba18-development.min.js", function() {
     alert("Everything is ok!");
 });
